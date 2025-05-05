@@ -1,38 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <nav>
-        <div class="10web"></div>
-        <div class="nav"></div>
-    </nav>
-    <div class="banner"></div>
-    <div class="categories"></div>
-    <div class="nostalgicGems">
-        <div class="Pac-Man product"></div>
-        <div class="Sonic-the-hegdehog product"></div>
-        <div class="Stardew-valley product"></div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="toolbar">
+      <img src="images/10web.svg" alt="" />
     </div>
-    <div class="newGameArrivals">
-        <div class="Gaming-mouse product"></div>
-        <div class="Headset product"></div>
-        <div class="Nintendo-switch product"></div>
+    <div class="nav"></div>
+    <main>
+      <div class="banner">
+        <swiper-container
+          class="mySwiper"
+          navigation="false"
+          space-between="30"
+          centered-slides="true"
+          autoplay-delay="2500"
+          autoplay-disable-on-interaction="false"
+        >
+          <swiper-slide class="swiper-slide2"
+            ><img src="images/slide1.webp" alt=""
+          /></swiper-slide>
+          <swiper-slide class="swiper-slide2"
+            ><img src="images/slide2.webp" alt=""
+          /></swiper-slide>
+          <swiper-slide class="swiper-slide2"
+            ><img src="images/slide3.webp" alt=""
+          /></swiper-slide>
+        </swiper-container>
+      </div>
+      <div class="categories">
+        <h1>Explore our Categories</h1>
+        <swiper-container
+          class="mySwiper"
+          space-between="30"
+          slides-per-view="3"
+          autoplay-delay="4000"
+          stopOnLastSlide="false"
+          loop="true"
+        >
+          <swiper-slide class="category_selection"
+            ><div class="cat">
+              <img src="images/accessories.webp" alt="" />
+              <div class="category_link"></div></div
+          ></swiper-slide>
+          <swiper-slide class="category_selection"
+            ><div class="cat">
+              <img src="images/Consoles.webp" alt="" />
+              <div class="category_link"></div></div
+          ></swiper-slide>
+          <swiper-slide class="category_selection"
+            ><div class="cat">
+              <img src="images/Games.webp" alt="" />
+              <div class="category_link"></div></div
+          ></swiper-slide>
+          <swiper-slide class="category_selection"
+            ><div class="cat">
+              <img src="images/accessories.webp" alt="" />
+              <div class="category_link"></div></div
+          ></swiper-slide>
+          <swiper-slide class="category_selection"
+            ><div class="cat">
+              <img src="images/Consoles.webp" alt="" />
+              <div class="category_link"></div></div
+          ></swiper-slide>
+        </swiper-container>
+      </div>
+      <div class="rest">
+      <div class="nostalgicGems">
+        <div>
+          <div>
+            <h1>Nostalgic Gaming Gems</h1>
+            <p>Rediscover the classics that defined gaming.</p>
+          </div>
+          <div class="ShopNow">Shop Now</div>
+        </div>
+        <div class="ProdGrid">
+          <a>
+            <div class="Pac-Man product">
+              <img src="images/Pac-man.webp" alt="" />
+              <span class="title"></span>
+              <span class="price"></span>
+              <span class="cart"></span>
+            </div>
+          </a>
+          <a>
+            <div class="Sonic-the-hegdehog product">
+              <span class="title"></span>
+              <span class="price"></span>
+              <span class="cart"></span>
+              <img src="images/Sonic.webp" alt="" />
+            </div>
+          </a>
+          <a>
+            <div class="Stardew-valley product">
+              <img src="images/StardewValley.webp" alt="" />
+              <span class="title"></span>
+              <span class="price"></span>
+              <span class="cart"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="newGameArrivals"><div>
+        <div>
+          <h1>New Game Arrivals</h1>
+          <p>Check out the latest titles just released!</p>
+        </div>
+        <div class="ShopNow">Shop Now</div>
+      </div>
+      <div class="ProdGrid">
+        <a>
+          <div class="Gaming-mouse product">
+            <img src="images/mouse.webp" alt="" />
+            <span class="title"></span>
+            <span class="price"></span>
+            <span class="cart"></span>
+          </div>
+        </a>
+        <a>
+          <div class="Headset product">
+            <img src="images/headphones.webp" alt="" />
+            <span class="title"></span>
+            <span class="price"></span>
+            <span class="cart"></span>
+          </div>
+        </a>
+        <a>
+          <div class="Nintendo-switch product">
+            <img src="images/nintendo-switch.webp" alt="" />
+            <span class="title"></span>
+            <span class="price"></span>
+            <span class="cart"></span>
+          </div>
+        </a>
+      </div>
+        <div class=""></div>
+      </div>
+      <div class="exclusiveCollectibles">
+        <div>
+          <h1>Exclusive Collectibles</h1>
+          <p>Discover unique items for true fans.</p>
+        </div>
+      <div class="ShopNow">Shop Now</div>
     </div>
-    <div class="exclusiveCollectibles">
-        <div class="Gaming-controller product"></div>
-        <div class="Nintendo-switch product"></div>
-        <div class="Play-Station5 product"></div>
-    </div>
+    <div class="ProdGrid">
+      <a>
+        <div class="Gaming-controller product">
+          <img src="images/cust-controller.webp" alt="" />
+          <span class="title"></span>
+          <span class="price"></span>
+          <span class="cart"></span>
+        </div>
+      </a>
+      <a>
+        <div class="Nintendo-switch product">
+          <img src="images/nintendo-switch.webp" alt="" />
+          <span class="title"></span>
+          <span class="price"></span>
+          <span class="cart"></span>
+        </div>
+      </a>
+      <a>
+        <div class="Play-Station5 product">
+          <img src="images/ps5.webp" alt="" />
+          <span class="title"></span>
+          <span class="price"></span>
+          <span class="cart"></span>
+        </div>
+      </a>
+      </div>
+    </main>
     <footer>
-        <div></div>
-        <hr>
-        <div></div>
+      <div>
+        <div><h1>Shop</h1>
+          <ul>
+        <li><a href="">Shop All</a></li>
+        <li><a href="">Video Games</a></li>
+        <li><a href="">Consoles</a></li>
+      </ul>
+        </div>
+        <div><h1>Collections</h1>
+          <ul>
+        <li><a href="">Latest Releases</a></li>
+        <li><a href="">Limited Edition</a></li>
+      </ul>
+        </div>
+        <div><h1>Accessories</h1>
+        <a href="">Accessories</a>
+        </div>
+        <div><h1>Join Our Newsletter</h1>
+        <p>Subscribe to receive updates on the latest games and exclusive offers.</p>
+        </div>
+      </div>
+      <hr />
+      <div>
+        <div>© 2024 Pixel Haven – All rights reserved.</div>
+        <div>
+          <a href="">Retro Classics</a><a href="">Terms and Conditions</a><a href="">Privacy Policy</a><a href="">Refund and Return Policy</a>
+        </div>
+      </div>
     </footer>
     <script href="sandbox.js"></script>
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
 </html>
