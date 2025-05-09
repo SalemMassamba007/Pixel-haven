@@ -1,143 +1,626 @@
 * {
-    margin: 0;
+  margin: 0;
+  font-family: "Monserrat", sans-serif;
 }
+
 
 /* general */
 
 nav {
-    position: sticky;
-    top: 0;
-    width: 100%;
-    border: 1px solid black;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+hr{
+  width: 90%;
+  height: 1px;
+  margin: auto;
+  color: #000;
+  background-color: #000;
+}
+
+i {
+  color: #fff;
+}
+
+.title{
+  font-weight: 800;
+  font-size: 1.3em;
+}
+
+.price{
+  font-size: 1.3em;
+}
+
+.strike{
+  text-decoration: line-through;
+}
+
+.cart{
+  text-decoration: underline;
+  font-size: 1.3em;
+}
+
+li{
+  list-style-type: none;
+}
+
+.ProdGrid li{
+  margin: 6% 0;
 }
 
 .toolbar,
 .nav {
-    width: 100%;
-    border: 1px solid blue;
-    height: 80px;
-    padding: 8px 0;
+  width: 100%;
+  height: 80px;
+  padding: 8px 0;
 }
 
 .toolbar {
-    position: fixed;
-    top: 0;
-    z-index: 11;
-    background-color: #fff;
-    text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  background-color: #fff;
+  text-align: center;
 }
 
-.toolbar img{
-    height: 100%;
+.toolbar img {
+  height: 100%;
+}
+
+.input{
+  width: 95%;
+  height: 8vh;
+  display: flex;
+  margin: 2vh 0;
+}
+
+.email{
+  background-color: #fff;
+  padding: 5%;
+  width: 60%;
+  border-radius: 5px;
+  border-left: 2px solid #f1f1f1;
+  border-top: 2px solid #f1f1f1;
+  border-bottom: 2px solid #acacac;
+  border-right: 2px solid #f1f1f1;
+  font-size: 1.13em;
+}
+
+.submit{
+  background-color: #000;
+  color: #fff;
+  width: 40%;
+  display: inline;
+  border-radius: 5px;
+  font-size: 1.2em;
 }
 
 .nav {
-    display: block;
-    position: sticky;
-    top: 97px;
-    z-index: 10;
-
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: sticky;
+  top: 96px;
+  z-index: 10;
 }
 
-.rest{
-    background-color: #f1f1f1;
-    padding: 3% 0;
+.nav img {
+  height: 80%;
+}
+
+.nav ul {
+  display: inline-block;
+}
+
+.nav li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.4em;
+  display: inline-block;
+  margin: 0 2vw;
+  font-weight: 100;
+}
+
+.nav i {
+  margin: 0 0.5vw;
+  font-size: 1.4em;
+}
+
+.nav2{
+  color: #000;
+  position: fixed;
+  top: 96px;
+  background-color: #fff;
+}
+
+.nav2 a{
+  color: #000;
+}
+
+.nav2 i{
+  color: #000;
+}
+
+.placeholder{
+  height: 24vh;
+}
+
+.announcmentbar{
+  background-color: rgb(30, 30, 30);
+  color: #fff;
+  text-align: center;
+  font-size: 1.2em;
+  padding: 2vh 0;
+}
+
+.navsticky {
+  animation-name: navfade;
+  animation-duration: 1s;
+  background-color: #000;
+}
+
+.rest {
+  background-color: #f1f1f1;
+}
+
+.main{
+  display: flex;
+  width: 100%;
+}
+
+.maincontent{
+  width: 80%;
+  margin-top: 13%;
+  margin-left: 342px;
+}
+
+.innerSpace{
+  margin-left: 342px;
+}
+
+
+
+.sidefilter{
+  width: 18%;
+  text-align: left;
+  padding: 5% 2%;
+  position: absolute;
+}
+
+.sidesticky{
+  position: fixed;
+  top: 40px;
+  width: 18%;
+  text-align: left;
+  padding: 5% 2%;
+  z-index: 1;
+}
+
+.sidefilter h1{
+  margin: 0 0 20% 0;
+}
+
+.sidefilter i{
+  color: #000;
+  
+}
+
+.prehead{
+  font-size: 1.1em;
+}
+
+.head{
+  font-size: 2.8em;
+}
+
+.collapse{
+  font-size: 1.4em;
+  margin: 2% 0 8% 0;
+}
+
+.remove{
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #c2c2c2;
+  padding: 2%;
+  border-radius: 5px;
+  color: rgb(29, 29, 29);
+  font-size: 1.18em;
+}
+
+.remove i{
+  color: rgb(29, 29, 29);
+}
+
+.sideitem{
+  display: block;
+}
+
+.dropdown{
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown button{
+  background-color: #fff;
+  border: none;
+}
+
+.circle{
+  width: 25px;
+  height: 25px;
+  background-color: #fff;
+  box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.541);
+  border-radius: 30px;
+}
+
+.sidefilter h4{
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+
+.slider{
+  display: flex;
+  justify-content: center;
+}
+
+.selections{
+  width: 50%;
+  display: block;
+  margin: 6% auto 6% 10%;
+  font-size: 1.2em;
+  
+}
+
+.filter{
+  margin: 10% 0;
+  height: 7%;
+  display: block;
+}
+
+.filterselection{
+  padding: 2% 2%;
+  font-size: 1.1em;
+  background-color: #fff;
+  border: 1px solid #c2c2c2;
+  border-radius: 5px;
+  margin: 5% 0;
+}
+
+.dark{
+  margin: 8% 0;
+  height: 8px;
+  width: 85%;
+  color: #000;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.fa-angle-down{
+  color: #000;
+}
+
+.onsale{
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  padding: 1vh 1vw;
+  background-color: #000;
+  color: #fff;
+}
+
+.topfoot {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1em;
+}
+
+.topfoot a {
+  display: block;
+  margin: 5vh 0;
+  text-decoration: none;
+  color: black;
+}
+
+.leftfoot {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin: 5%;
+}
+
+.leftfoot div {
+  width: 30%;
+}
+
+.rightfoot {
+  margin: 5%;
+}
+
+.bottomfooter {
+  height: 23vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 5vh;
+}
+
+.bottomleft {
+  width: 25%;
+  height: 60%;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 100;
+  /* margin: auto auto 0 auto; */
+}
+
+.bottomleft p {
+  margin: 3px 0;
+}
+
+.bottomright {
+  width: 40%;
+  height: 60%;
+  /* margin: auto auto 0 ; */
+}
+
+.bottomright a {
+  display: inline-block;
+  margin: 3px 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 1.3em;
 }
 
 /* index */
+
 /* banner */
 .banner {
-    width: 100%;
-    height: 100vh;
-    border: 1px solid yellowgreen;
-    background-color: blueviolet;
-    position: static;
+  width: 100%;
+  height: 100vh;
+  position: static;
+  color: #fff;
+}
+
+.slidetext{
+  width: 50%;
+  position: absolute;
+  text-align: left;
+  left: 4%;
+  font-size: 1.4em;
+}
+
+.slidetext h1{
+  margin: 5% 0;
+}
+
+.slidetext p{
+  margin: 5% 0;
 }
 
 swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
 }
 
 swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(50%);
 }
 
+.firstSwiper {
+  animation-name: slowzoom;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.slidebutton{
+  background-color: #fff;
+  padding: 2% 2%;
+  border-radius: 5px;
+  width: fit-content;
+}
+
+.slidebutton a{
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9em;
+}
 /* second slider */
 
 .categories {
-    width: 100%;
-    position: static;
-    height: 90vh;
-    width: 95%;
-    margin: 5% auto;
+  width: 100%;
+  position: static;
+  height: 95vh;
+  width: 95%;
+  margin: 5% auto;
 }
 
-.categories h1{
-    text-align: center;
-    margin: 3% 0;
-    font-size: 2.8em;
+.categories h1 {
+  text-align: center;
+  margin: 3% 0;
+  font-size: 2.8em;
 }
 
 .category_selection {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+
+}
+
+.category_selection img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.category_link{
+  position: absolute;
+  margin: auto;
+  color: #fff;
+  width: 50%;
+  height: 30%;
+ 
+}
+
+.slidebutton2{
+  background-color: #fff;
+  font-size: 1.3em;
+  border-radius: 5px;
+  padding: 7%;
+  width: fit-content;
+  margin: 25% auto;
+}
+
+.slidebutton2 a{
+  color: #000;
+  text-decoration: none;
+}
+
+.category_link h1{
+  font-size: 1.7em;
+}
+/* nostalgic games */
+
+.grid{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+  height: fit-content;
+}
+
+.grid h1{
+  font-size: 3.7em;
+  margin-bottom: 10%;
+}
+
+.grid p{
+  font-size: 1.7em;
+  font-weight: 100;
+}
+
+.headsub{
+  padding: 40px;
+
+}
+
+.ShopNow{
+  margin: 42px;
+  font-size: 1.4em;
+  width: fit-content;
+  height: fit-content;
+  border: 2px solid black ;
+  border-radius: 8px;
+}
+
+.ShopNow a{
+  
+  margin: 20px 40px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.product{
+  position: relative;
+}
+
+.product img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ProdGrid {
+  width: 98%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+
+.item{
+  width: fit-content;
+  height: fit-content;
+  display: inline-block;
+  margin: 0 0.5%;
+}
+
+/* animations */
+@keyframes slowzoom {
+  0% {
+    scale: 1.1;
   }
 
-  .category_selection img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  100% {
+    scale: 1.2;
   }
+}
 
-  .cat{
-    height: 85vh;
-    width: 95%;
-    border-radius: 15px;
+@keyframes navfade {
+  0% {
+    background-color: rgba(0,0,0,0);
   }
-
-  .cat img{
-    height: 100%;
-    border-radius: 5px;
+  100%{
+    background-color: rgba(0, 0, 0, 1);
   }
+}
 
-  /* nostalgic games */
+/* hovers */
 
-  .nostalgicGems{
-    margin: ;
-  }
+.ShopNow:hover{
+  background-color: #000;
+  border: 2px solid #fff ;
+  color: #fff;
+  cursor: pointer;
+  transition: 1s;
+}
 
-  .product{
-    height: 65vh;
-    margin: 15% 0 5%;
-    padding: 2% 0;
-  }
+.navitems:hover{
+  color: fuchsia;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 1s;
+}
 
-  .product img{
-    width: 100%;
-    height: 100%;
-    display: inline;
-  }
+.icon:hover{
+  color: fuchsia;
+  cursor: pointer;
+  transition: 1s;
+}
 
-  .ProdGrid{
-    width: 98%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0 auto;
-  }
+.cart:hover{
+  color: fuchsia;
+  cursor: pointer;
+  transition: 0.7s;
+}
+
+.item:hover{
+  border: 1px solid black;
+  transition: 1.7s;
+}

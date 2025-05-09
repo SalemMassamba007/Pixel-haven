@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com" 
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="toolbar">
       <img src="images/10web.svg" alt="" />
     </div>
-    <div class="nav"></div>
+    <div class="nav" id="navbar">
+      <img src="images/PixelHaven.webp" alt="">
+      <div>
+        <ul>
+          <li><a href="VideoGames.html" class="navitems">Video Games</a></li>
+          <li><a href="Console.html" class="navitems">Consoles</a></li>
+          <li><a href="Accessories.html" class="navitems">Accessories</a></li>
+          <li><a href="index.html" class="navitems">Home</a></li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li><i class="fa-solid fa-user icon"></i></li>
+          <li><i class="fa-solid fa-bag-shopping icon"></i></li>
+        </ul>
+      </div>
+    </div>
     <main>
       <div class="banner">
         <swiper-container
@@ -18,18 +45,37 @@
           navigation="false"
           space-between="30"
           centered-slides="true"
-          autoplay-delay="2500"
+          autoplay-delay="3000"
           autoplay-disable-on-interaction="false"
+          loop="true"
         >
           <swiper-slide class="swiper-slide2"
-            ><img src="images/slide1.webp" alt=""
-          /></swiper-slide>
+            ><img src="images/slide1.webp" alt="" class="firstSwiper"
+          />
+          <div class="slidetext">
+            <h1>Discover Exclusive Gaming Deals</h1>
+            <p>Dive into our world of gaming with unbeatable offers on top video games, consoles, and accessories. Experience the thrill of gaming at Pixel Haven.</p>
+            <div class="slidebutton"><a href="">Explore Deals</a></div>
+          </div>
+        </swiper-slide>
           <swiper-slide class="swiper-slide2"
-            ><img src="images/slide2.webp" alt=""
-          /></swiper-slide>
+            ><img src="images/slide2.webp" alt="" class="firstSwiper"
+          />
+          <div class="slidetext">
+            <h1>Curated Collection Awaits You</h1>
+            <p>Explore our handpicked collections featuring retro classics and the latest releases. Find your next favorite game with ease and excitement.</p>
+            <div class="slidebutton"><a href="">View Collection</a></div>
+          </div>
+        </swiper-slide>
           <swiper-slide class="swiper-slide2"
-            ><img src="images/slide3.webp" alt=""
-          /></swiper-slide>
+            ><img src="images/slide3.webp" alt="" class="firstSwiper"
+          />
+          <div class="slidetext">
+            <h1>Join Our Loyalty Program Today</h1>
+            <p>Sign up for our loyalty program to enjoy exclusive discounts, early access to new arrivals, and more. Stay ahead in the gaming world with Pixel Haven.</p>
+            <div class="slidebutton"><a href="">Join Now</a></div>
+          </div>
+        </swiper-slide>
         </swiper-container>
       </div>
       <div class="categories">
@@ -42,169 +88,233 @@
           stopOnLastSlide="false"
           loop="true"
         >
-          <swiper-slide class="category_selection"
-            ><div class="cat">
+          <swiper-slide class="category_selection">
               <img src="images/accessories.webp" alt="" />
-              <div class="category_link"></div></div
+              <div class="category_link">
+                <h1>Accessories</h1>
+                <div class="slidebutton2"><a href="">Shop Now</a></div>
+              </div
           ></swiper-slide>
-          <swiper-slide class="category_selection"
-            ><div class="cat">
+          <swiper-slide class="category_selection">
               <img src="images/Consoles.webp" alt="" />
-              <div class="category_link"></div></div
+              <div class="category_link">
+                <h1>Consoles</h1>
+                <div class="slidebutton2"><a href="">Shop Now</a></div>
+              </div
           ></swiper-slide>
-          <swiper-slide class="category_selection"
-            ><div class="cat">
+          <swiper-slide class="category_selection">
               <img src="images/Games.webp" alt="" />
-              <div class="category_link"></div></div
+              <div class="category_link">
+                <h1>Video Games</h1>
+                <div class="slidebutton2"><a href="">Shop Now</a></div>
+              </div
           ></swiper-slide>
-          <swiper-slide class="category_selection"
-            ><div class="cat">
+          <swiper-slide class="category_selection">
               <img src="images/accessories.webp" alt="" />
-              <div class="category_link"></div></div
+              <div class="category_link">
+                <h1>Accessories</h1>
+                <div class="slidebutton2"><a href="">Shop Now</a></div>
+              </div
           ></swiper-slide>
-          <swiper-slide class="category_selection"
-            ><div class="cat">
+          <swiper-slide class="category_selection">
               <img src="images/Consoles.webp" alt="" />
-              <div class="category_link"></div></div
+              <div class="category_link">
+                <h1>Consoles</h1>
+                <div class="slidebutton2"><a href="">Shop Now</a></div>
+              </div
           ></swiper-slide>
+          <swiper-slide class="category_selection">
+            <img src="images/Games.webp" alt="" />
+            <div class="category_link">
+              <h1>Video Games</h1>
+              <div class="slidebutton2"><a href="">Shop Now</a></div>
+            </div
+        ></swiper-slide>
         </swiper-container>
       </div>
       <div class="rest">
       <div class="nostalgicGems">
-        <div>
-          <div>
+        <div class="grid">
+          <div class="headsub">
             <h1>Nostalgic Gaming Gems</h1>
             <p>Rediscover the classics that defined gaming.</p>
           </div>
-          <div class="ShopNow">Shop Now</div>
+          <div class="ShopNow"><a>Shop Now</a></div>
         </div>
         <div class="ProdGrid">
-          <a>
+          <a class="item">
             <div class="Pac-Man product">
               <img src="images/Pac-man.webp" alt="" />
-              <span class="title"></span>
-              <span class="price"></span>
-              <span class="cart"></span>
+              <ul>
+                <li><span class="title">Pac-Man</span></li>
+                <li><span class="price">$9.99</span></li>
+                <li><span class="cart">add to cart</span></li>
+              </ul>
             </div>
           </a>
-          <a>
+          <a class="item">
             <div class="Sonic-the-hegdehog product">
-              <span class="title"></span>
-              <span class="price"></span>
-              <span class="cart"></span>
               <img src="images/Sonic.webp" alt="" />
+              <ul>
+                <li><span class="title">Sonic The Hedgehog</span></li>
+                <li><span class="price">$29.99</span></li>
+                <li><span class="cart">add to cart</span></li>
+              </ul>
             </div>
           </a>
-          <a>
+          <a class="item">
             <div class="Stardew-valley product">
               <img src="images/StardewValley.webp" alt="" />
-              <span class="title"></span>
-              <span class="price"></span>
-              <span class="cart"></span>
+              <ul>
+                <li><span class="title">Stardew Valley</span></li>
+                <li><span class="price">$19.99</span></li>
+                <li><span class="cart">add to cart</span></li>
+              </ul>
             </div>
           </a>
         </div>
       </div>
-      <div class="newGameArrivals"><div>
-        <div>
+      <div class="newGameArrivals">
+      <div class="grid">
+        <div class="headsub">
           <h1>New Game Arrivals</h1>
           <p>Check out the latest titles just released!</p>
         </div>
-        <div class="ShopNow">Shop Now</div>
+        <div class="ShopNow"><a>Shop Now</a></div>
       </div>
       <div class="ProdGrid">
-        <a>
+        <a class="item">
           <div class="Gaming-mouse product">
             <img src="images/mouse.webp" alt="" />
-            <span class="title"></span>
-            <span class="price"></span>
-            <span class="cart"></span>
+            <ul>
+              <li><span class="title">RGB Gaming Mouse</span></li>
+              <li><span class="price">$49.99</span></li>
+              <li><span class="cart">add to cart</span></li>
+            </ul>
           </div>
         </a>
-        <a>
+        <a class="item">
           <div class="Headset product">
             <img src="images/headphones.webp" alt="" />
-            <span class="title"></span>
-            <span class="price"></span>
-            <span class="cart"></span>
+            <div class="overlay__sign">
+              <p class="onsale">Sale!</p>
+            </div> 
+            <ul>
+              <li><span class="title">Wireless Gaming Headset</span></li>
+              <li><span class="price"><span class="strike">$89.99</span> $67.99</span></li>
+              <li><span class="cart">add to cart</span></li>
+            </ul>
           </div>
         </a>
-        <a>
+        <a class="item">
           <div class="Nintendo-switch product">
             <img src="images/nintendo-switch.webp" alt="" />
-            <span class="title"></span>
-            <span class="price"></span>
-            <span class="cart"></span>
+            <ul>
+              <li><span class="title">Nintendo Switch</span></li>
+              <li><span class="price">$299.99</span></li>
+              <li><span class="cart">add to cart</span></li>
+            </ul>
           </div>
         </a>
       </div>
-        <div class=""></div>
-      </div>
-      <div class="exclusiveCollectibles">
-        <div>
+    </div>
+    <div class="exclusiveCollectibles">
+      <div class="grid">
+        <div class="headsub">
           <h1>Exclusive Collectibles</h1>
           <p>Discover unique items for true fans.</p>
         </div>
-      <div class="ShopNow">Shop Now</div>
+        <div class="ShopNow"><a>Shop Now</a></div>
     </div>
     <div class="ProdGrid">
-      <a>
+      <a class="item">
         <div class="Gaming-controller product">
           <img src="images/cust-controller.webp" alt="" />
-          <span class="title"></span>
-          <span class="price"></span>
-          <span class="cart"></span>
+          <ul>
+            <li><span class="title">Customizable Game Controller</span></li>
+            <li><span class="price">$69.99</span></li>
+            <li><span class="cart">add to cart</span></li>
+          </ul>
         </div>
       </a>
-      <a>
+      <a class="item">
         <div class="Nintendo-switch product">
           <img src="images/nintendo-switch.webp" alt="" />
-          <span class="title"></span>
-          <span class="price"></span>
-          <span class="cart"></span>
+          <ul>
+            <li><span class="title">Nintendo Switch</span></li>
+            <li><span class="price">$299.99</span></li>
+            <li><span class="cart">add to cart</span></li>
+          </ul>
         </div>
       </a>
-      <a>
+      <a class="item">
         <div class="Play-Station5 product">
           <img src="images/ps5.webp" alt="" />
-          <span class="title"></span>
-          <span class="price"></span>
-          <span class="cart"></span>
+          <p class="onsale">Sale!</p>
+          <ul>
+            <li><span class="title">PlayStation 5</span></li>
+            <li><span class="price"><span class="strike">$499.99</span> $374.99</span></li>
+            <li><span class="cart">add to cart</span></li>
+          </ul>
         </div>
       </a>
       </div>
     </main>
     <footer>
-      <div>
-        <div><h1>Shop</h1>
-          <ul>
-        <li><a href="">Shop All</a></li>
-        <li><a href="">Video Games</a></li>
-        <li><a href="">Consoles</a></li>
-      </ul>
+      <div class="topfoot">
+      <div class="leftfoot">
+        <div>
+            <h1>Shop</h1>
+            <a href="">Shop All</a>
+            <a href="">Video Games</a>
+            <a href="">Consoles</a>
         </div>
-        <div><h1>Collections</h1>
-          <ul>
-        <li><a href="">Latest Releases</a></li>
-        <li><a href="">Limited Edition</a></li>
-      </ul>
+        <div>
+            <h1>Collections</h1>
+            <a href="">Latest Releases</a>
+            <a href="">Limited Edition</a>
         </div>
-        <div><h1>Accessories</h1>
-        <a href="">Accessories</a>
+        <div>
+          <h1>Accessories</h1>
+          <a href="">Accessories</a>
         </div>
-        <div><h1>Join Our Newsletter</h1>
-        <p>Subscribe to receive updates on the latest games and exclusive offers.</p>
+      </div>
+        <div class="rightfoot">
+          <h1>Join Our Newsletter</h1>
+          <p>Subscribe to receive updates on the latest games and exclusive offers.</p>
+          <div class="input">
+          <input type="email" placeholder="Enter your email" class="email"><button class="submit">Subscribe</button>
+        </div>
         </div>
       </div>
       <hr />
-      <div>
-        <div>© 2024 Pixel Haven – All rights reserved.</div>
-        <div>
+      <div class="bottomfooter">
+        <div class="bottomleft">
+          <p>© 2024 Pixel Haven – All rights reserved.</p>
+        </div>
+        <div class="bottomright">
           <a href="">Retro Classics</a><a href="">Terms and Conditions</a><a href="">Privacy Policy</a><a href="">Refund and Return Policy</a>
         </div>
       </div>
     </footer>
-    <script href="sandbox.js"></script>
+    <script href="sandbox.js">
+       window.onscroll = function() {
+    stickyNavbar();
+  };
+  
+  function stickyNavbar() {
+    const navbar = document.getElementById("navbar");
+    
+    // Change this number to set when it sticks
+    const stickyPoint = 190;
+  
+    if (window.scrollY > stickyPoint) {
+      navbar.classList.add("navsticky");
+    } else {
+      navbar.classList.remove("navsticky");
+    }
+  }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>

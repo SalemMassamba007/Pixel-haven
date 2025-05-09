@@ -5,9 +5,174 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" 
+          href="https://fonts.gstatic.com" 
+          crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" 
+          rel="stylesheet">
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+          crossorigin="anonymous" 
+          referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div class="toolbar">
+        <img src="images/10web.svg" alt="" />
+      </div>
+      <div class="nav nav2">
+        <img src="images/pixelhaven-black.webp" alt="">
+        <div>
+          <ul>
+            <li><a href="VideoGames.html" class="navitems">Video Games</a></li>
+            <li><a href="Console.html" class="navitems black">Consoles</a></li>
+            <li><a href="Accessories.html" class="navitems black">Accessories</a></li>
+            <li><a href="index.html" class="navitems">Home</a></li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li><i class="fa-solid fa-user icon black"></i></li>
+            <li><i class="fa-solid fa-bag-shopping icon black"></i></li>
+          </ul>
+        </div>
+        </div>
+        <div class="placeholder"></div>
+        <p class="announcmentbar">Seasonal savings are here! Shop our bestsellers before they are gone.</p>
+        <div class="main">
+            <div class="sidefilter" id="side">
+                <p class="sideitem prehead">
+                  Shop All / Consoles
+                </p>
+                <h1 class="sideitem head">
+                  Consoles
+                </h1>
+                <h3 class="sideitem collapse">
+                  Collapse All <i class="fa-solid fa-minus"></i>
+                </h3>
+                <button class="sideitem remove">
+                  Consoles <i class="fa-solid fa-x"></i>
+                </button>
+                <h3 class="sideitem collapse">Reset All <i class="fa-solid fa-rotate-right"></i></h3>
+                <div class="filter"><h4 class="sideitem dropdown">Price <button><i class="fa-solid fa-angle-up"></i></button></h4>
+                <div class="slider">
+                  <div class="dark"><div class="circle"></div><div class="circle"></div></div>
+                </div></div>
+                <div class="filter"><h4 class="sideitem dropdown">Stock <button><i class="fa-solid fa-angle-up"></i></button></h4>
+                <input type="text" placeholder="Select an option" class="filterselection"></div>
+                <div class="filter"><h4 class="sideitem dropdown">Collections <button><i class="fa-solid fa-angle-up"></i></button></h4>
+                <div class="selections"><input type="checkbox" name="" id=""><label for="">Latest Releases</label></div>
+                <div class="selections"><input type="checkbox" name="" id=""><label for="">Limited Edition</label></div>
+                <div class="selections"><input type="checkbox" name="" id=""><label for="">Retro Classics</label></div>
+            </div>
+          </div>
+            <div class="maincontent" id="inner">
+                <div class="ProdGrid">
+                  <a class="item">
+                    <div class="Headset product">
+                      <img src="images/nintendo-switch.webp" alt="" />
+                      <p class="onsale ingrid">Sale!</p>
+                      <ul>
+                        <li><span class="title">Nintendo Switch</span></li>
+                        <li><span class="price">$299.99</span></li>
+                        <li><span class="cart">add to cart</span></li>
+                      </ul>
+                    </div>
+                  </a>
+                  <a class="item">
+                    <div class="Pac-Man product">
+                      <img src="images/ps5.webp" alt="" />
+                      <p class="onsale ingrid">Sale!</p>
+                      <ul>
+                        <li><span class="title">PlayStation 5</span></li>
+                        <li><span class="price"><span class="strike">$499.99</span> $374.99</span></li>
+                        <li><span class="cart">add to cart</span></li>
+                      </ul>
+                    </div>
+                  </a>
+                    <a class="item">
+                      <div class="Play-Station5 product">
+                        <img src="images/xbox.webp" alt="" />
+                        <ul>
+                          <li><span class="title">Xbox Series X</span></li>
+                          <li><span class="price"><span class="strike">$499.99</span> $374.99</span></li>
+                          <li><span class="cart">add to cart</span></li>
+                        </ul>
+                      </div>
+                    </a>
+                    </div>
+                   
+    </div>
+        </div>
+        </div>
+        <footer>
+            <div class="topfoot">
+            <div class="leftfoot">
+              <div>
+                  <h1>Shop</h1>
+                  <a href="">Shop All</a>
+                  <a href="">Video Games</a>
+                  <a href="">Consoles</a>
+              </div>
+              <div>
+                  <h1>Collections</h1>
+                  <a href="">Latest Releases</a>
+                  <a href="">Limited Edition</a>
+              </div>
+              <div>
+                <h1>Accessories</h1>
+                <a href="">Accessories</a>
+              </div>
+            </div>
+              <div class="rightfoot">
+                <h1>Join Our Newsletter</h1>
+                <p>Subscribe to receive updates on the latest games and exclusive offers.</p>
+                <div class="input">
+                <input type="email" placeholder="Enter your email" class="email"><button class="submit">Subscribe</button>
+              </div>
+              </div>
+            </div>
+            <hr />
+            <div class="bottomfooter">
+              <div class="bottomleft">
+                <p>© 2024 Pixel Haven – All rights reserved.</p>
+              </div>
+              <div class="bottomright">
+                <a href="">Retro Classics</a><a href="">Terms and Conditions</a><a href="">Privacy Policy</a><a href="">Refund and Return Policy</a>
+              </div>
+            </div>
+          </footer>
+    <script href="sandbox.js">
+      window.onscroll = function() {
+    stickyNavbar();
+  };
+  
+  function stickyNavbar() {
+    const navbar = document.getElementById("side");
     
-    <script href="sandbox.js"></script>
+    // Change this number to set when it sticks
+    const stickyPoint = {min:200, max:300} ;
+  
+    if (window.scrollY == stickyPoint) {
+      navbar.classList.add("sidesticky");
+    } else {
+      navbar.classList.remove("sidesticky");
+    }
+  }
+
+  function space() {
+    const navbar = document.getElementById("inner");
+    
+    // Change this number to set when it sticks
+    const spacePoint = 180;
+  
+    if (window.scrollY > stickyPoint) {
+      navbar.classList.add("innerSpace");
+    } else {
+      navbar.classList.remove("innerSpace");
+    }
+  }
+    </script>
 </body>
 </html>
